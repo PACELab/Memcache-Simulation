@@ -1,0 +1,13 @@
+cat ../trace/read_file.trc | sort -n | uniq -c | sort -nr | nl
+
+READ 568025 2499 * 0.03 = 83
+Hitrate: 0.988309
+
+GET 270043 13475 * 0.03 = 404
+READ+GET 15673
+
+
+sort -s -k2 -k3 tread_file.trc > ttread.trc
+cat ttread.trc | awk '{print $8}' | tr '(' ' '| tr ',' ' '| tr ')' ' ' > read_file1.trc
+cat read_file1.trc | awk '{print $1$2$3$4}' > read_file.trc
+

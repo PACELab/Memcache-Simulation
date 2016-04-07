@@ -1,0 +1,4 @@
+ketama_sim.cpp: In function ‘int main()’:
+ketama_sim.cpp:34:36: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+  ketama_roll( &c, "ketama.servers" );
+                                    ^
