@@ -5,15 +5,15 @@
 #include<algorithm>
 
 #define SERVERS 10
-#define QUEUE 30000
-#define SIZE 100000
+#define QUEUE 3000
+#define SIZE 1000000
 using namespace std;
 
 main(){
 
 	vector<vector<long> > server (SERVERS);
 
-	ifstream trcfile ("zipf/A_1.txt");
+	ifstream trcfile ("zipf/B_1.txt");
 	long s;
 	long max=0, min=0;
 	long count= 0, hitcount=0, miscount=0;

@@ -1,0 +1,7 @@
+N= 1000000;
+exp = 1;
+m = 100000;
+
+Data = zipf_rand(N,exp,m);
+save A.txt I -ASCII;
+disp('yay');
