@@ -1,4 +1,4 @@
-Various simulations to run trace files and log hit rate and other desired metric.
+Simulation framework to run trace files and log hit rate and other desired metrics.
 
 To use: 
 Clone the project
